@@ -1,0 +1,12 @@
+First take, 0.0
+
+patches are available for kernel 3.18 and 4.1, so you better use one of those.
+
+This (seems to) work on 15.05, it worked on trunk as long as it was on kernel 4.1.
+It still(?) seems to work there provided you have the old patches-4.1 available, but you 
+obviously have to change the URL for the patch and set
+KERNEL_PATCHVER:=4.1
+in target/linux/[arch]/Makefile (did it for me anyway)
+
+Might need a target/linux/[arch]/config-4.1 ?
+
